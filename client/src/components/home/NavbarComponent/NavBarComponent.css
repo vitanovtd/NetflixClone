@@ -1,0 +1,233 @@
+.Navbar__main {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.Navbar__main.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Navbar__header-wrapper {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.Navbar__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar__logo-a {
+    display: block;
+    margin-right: 1rem;
+    width: 80px;
+}
+
+.Navbar__logo-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.Navbar__dropdown-menu {
+    display: none;
+
+}
+
+.Navbar__dropdown-menu button {
+    color: #e5e5e5;
+    border: none;
+    font-size: 0.8rem;
+    background-color: transparent;
+}
+
+
+.Navbar__dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 5px;
+    gap: 0.2rem;
+}
+
+
+.Navbar__items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+.Navbar__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 0.8rem;
+}
+
+.Navbar__link.active {
+    color: white;
+    font-weight: 600;
+}
+
+.Navbar__link:hover {
+    color: rgb(179, 179, 179);
+}
+
+
+.Navbar__user {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 1rem;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.Navbar__link-user {
+    display: none;
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 0.8rem;
+}
+
+.Navbar__link-user:hover {
+    color: rgb(179, 179, 179);
+}
+
+
+/* Below 570px any user elements should go on top of user nav menu and logo */
+@media screen and (max-width:570px) {
+    .Navbar__user {
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+/* Dropdown menu to be displayed */
+@media screen and (max-width: 995px) {
+    .Navbar__items {
+        display: none;
+    }
+
+    .Navbar__dropdown-menu {
+        display: block;
+    }
+}
+
+
+/* Netflix M Breakpoint (tablets, 640px and up) */
+@media (min-width: 640px) {
+    .Navbar__link {
+        font-size: 0.7rem;
+    }
+
+    .Navbar__user {
+        font-size: 0.7rem;
+    }
+
+    .Navbar__link-user {
+        font-size: 0.7rem;
+    }
+
+    .Navbar__logo-a {
+        width: 80px;
+    }
+
+    .Navbar__navigation {
+        max-width: calc(100% - 4rem);
+    }
+
+}
+
+/* Netflix L Breakpoint (desktop, 960px and up) */
+@media (min-width: 960px) {
+    .Navbar__link {
+        font-size: 0.7rem;
+    }
+
+    .Navbar__user {
+        font-size: 0.7rem;
+    }
+
+    .Navbar__link-user {
+        font-size: 0.7rem;
+    }
+
+    .Navbar__logo-a {
+        width: 120px;
+    }
+
+    .Navbar__navigation {
+        max-width: calc(100% - 4rem);
+    }
+}
+
+/* Netflix XL Breakpoint (large desktop, 1280px/1100px and up) */
+@media (min-width: 1280px) {
+
+    .Navbar__link {
+        font-size: 0.9rem;
+    }
+
+    .Navbar__user {
+        font-size: 0.9rem;
+    }
+
+    .Navbar__link-user {
+        font-size: 0.9rem;
+    }
+
+    .Navbar__logo-a {
+        width: 160px;
+    }
+
+
+    .Navbar__link-user {
+        display: inline-block;
+    }
+
+    .Navbar__navigation {
+        max-width: calc(84% - 6rem);
+    }
+}
+
+/* Netflix XLL Breakpoint (large desktop, 1920px and up) */
+@media (min-width: 1920px) {
+
+    .Navbar__link {
+        font-size: 1.4rem;
+    }
+
+    .Navbar__user {
+        font-size: 1.4rem;
+    }
+
+    .Navbar__link-user {
+        font-size: 1.4rem;
+    }
+
+    .Navbar__header-wrapper {
+        height: 70px;
+    }
+
+    .Navbar__logo-a {
+        width: 200px;
+    }
+
+    .Navbar__navigation {
+        max-width: calc(66.6% - 6rem);
+    }
+}

@@ -1,0 +1,75 @@
+.CTAComponent {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.CTAComponent__form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.CTAComponent__form-control {
+    position: relative;
+    flex-grow: 1;
+}
+
+.CTAComponent__form-input {
+    background-color: rgba(22, 22, 22, 0.7) !important;
+    border-color: rgba(128, 128, 128, 0.7);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    padding: 20px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.CTAComponent__form-input.error {
+    border-color: var(--netflix-color-red);
+}
+
+.CTAComponent__form-input.success {
+    border-color: var(--netflix-color-green);
+}
+
+.CTAComponent__form-label {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    font-size: 1em;
+    cursor: text;
+    transition: .2s ease-in-out;
+    user-select: none;
+    color: #a6a6a6;
+}
+
+.CTAComponent__form-input:focus+.CTAComponent__form-label,
+.CTAComponent__form-input:valid+.CTAComponent__form-label {
+    font-size: 12px;
+    top: 6px;
+}
+
+.CTAComponent__btn {
+    border-width: 0;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0px 30px;
+    user-select: none;
+    font-size: 1.3rem;
+    background-image: linear-gradient(180deg, var(--netflix-color-red), #9a0b0b);
+}
+
+.CTAComponent__btn:disabled {
+    cursor: not-allowed;
+}
+
+.CTAComponent__btn-icon {
+    font-size: 18px;
+    padding-left: 5px;
+}

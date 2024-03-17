@@ -1,0 +1,27 @@
+
+.IconButton {
+    /* Reset Default Styles */
+    margin: 0;
+    /* Reset default margin */
+    padding: 0;
+    /* Reset default padding */
+    background: none;
+    /* Reset default background */
+    border: none;
+    /* Reset default border */
+    appearance: none;
+    /* Reset default platform-specific styling  */
+    user-select: none;
+    /* Guards */
+    min-width: min-content;
+    /* Set the minimum width to the minimum width of the content */
+    min-height: min-content;
+    /* Set the minimum height to the minimum width of the content */
+    line-height: 0;
+    /* Remove empty space above button for text to match height of icon inside */
+}
+
+.IconButton__icon {
+    vertical-align: middle;
+    display: inline-block;
+}

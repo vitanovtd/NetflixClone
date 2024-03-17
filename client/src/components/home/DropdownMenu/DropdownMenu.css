@@ -1,0 +1,93 @@
+ul {
+  list-style: none;
+}
+.DropdownMenu__button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.DropdownMenu__profiles {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.DropdownMenu__menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 200px;
+  z-index: 999;
+  right: 45px;
+  top: 50px;
+}
+
+
+.DropdownMenu__main-avatar {
+  display: flex;
+  flex-direction: column;
+}
+.DropdownMenu__main-avatar-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 3px;
+}
+.DropdownMenu__caret-icon {
+  position: relative;
+  left: 4px;
+}
+.DropdownMenu__icon-div {
+  position: relative;
+  left: 18px;
+  color: #fff;
+}
+
+.DropdownMenu__caret-icon.up,
+.DropdownMenu__icon-div.up {
+  transform: rotate(180deg);
+}
+
+.DropdownMenu__profile-img {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+}
+
+.DropdownMenu__profile-name {
+  color: white;
+  padding-left: 5px;
+}
+.DropdownMenu__account-options-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+  }
+.DropdownMenu__account-options-list {
+  padding-left: 8px;
+}
+
+.DropdownMenu__account-options {
+  padding: 4px;
+}
+
+.DropdownMenu__account-options-btn:hover,
+.DropdownMenu__profile-name:hover {
+  text-decoration: underline;
+}
+
+.DropdownMenu__pencil-icon,
+.DropdownMenu__person-box-icon,
+.DropdownMenu__person-icon,
+.DropdownMenu__question-icon {
+  color: rgb(137, 136, 136);
+  padding-right: 15px;
+  font-size: 22px;
+}
+
+.DropdownMenu__sign-out {
+  border-top: solid gray 1px;
+}

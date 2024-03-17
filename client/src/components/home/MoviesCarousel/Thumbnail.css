@@ -1,0 +1,30 @@
+.thumbnail-container {
+    position: relative;
+    height: 112px;
+    min-width: 180px;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    margin-right: 0.7rem;
+  }
+  
+  .thumbnail-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  @media (min-width: 768px) {
+    .thumbnail-container {
+      height: 144px;
+      min-width: 260px;
+    }
+  
+    .thumbnail-image {
+      border-radius: 8px;
+    }
+  }

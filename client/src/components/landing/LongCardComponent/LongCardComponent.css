@@ -1,0 +1,104 @@
+.LongCardComponent__wrapper {
+    padding: 40px 0px;
+    border-bottom: 8px solid #222222;
+}
+
+.LongCardComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 80%;
+    margin: auto;
+    width: 100%;
+    color: white;
+}
+
+.LongCardComponent.row-is-even {
+    flex-direction: column;
+}
+
+.LongCardComponent__text-container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.LongCardComponent__img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.LongCardComponent__title {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.LongCardComponent__subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.LongCardComponent__img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.LongCardComponent__img.download-and-watch {
+    margin-top: -30px;
+}
+
+.LongCardComponent__video-container.watch-on-tv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 55%;
+    top: 48%;
+    left: 49.6%;
+    transform: translate(-50%, -50%);
+}
+
+.LongCardComponent__video-container.watch-on-device {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.LongCardComponent__video {
+    width: 100%;
+    height: 100%;
+}
+
+/* Netflix L Breakpoint (desktops, 960px and up) */
+@media (min-width: 960px) {
+    .LongCardComponent {
+        flex-direction: row;
+        grid-gap: 3rem;
+        max-width: calc(100% - 4rem);
+    }
+
+    .LongCardComponent.row-is-even {
+        flex-direction: row-reverse;
+    }
+
+    .LongCardComponent__text-container {
+        width: 52%;
+        text-align: start;
+    }
+
+    .LongCardComponent__img-container {
+        width: 48%;
+    }
+}

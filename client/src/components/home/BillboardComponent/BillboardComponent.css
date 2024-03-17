@@ -1,0 +1,14 @@
+.BillboardComponent {
+    position: relative;
+    background-color: rgb(149, 136, 136);
+    height: 56.25vw;
+    width: 100%;
+    color: white;
+}
+
+.BillboardComponent__video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(.60);
+}

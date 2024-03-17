@@ -1,0 +1,26 @@
+@import url("../../node_modules/bootstrap/dist/css/bootstrap.css");
+@import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+
+:root {
+    --netflix-color-red: #e50914;
+    --netflix-color-green: limegreen;
+    --netflix-color-orange: #e87c03;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* 
+this removes the page scrollbar,
+this happens because when we open a model,
+we want only the modal itself to be scrollable,
+not the whole page
+*/
+
+body:has( .hideScroll){
+   overflow: hidden;
+}

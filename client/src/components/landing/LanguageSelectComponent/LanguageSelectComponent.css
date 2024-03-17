@@ -1,0 +1,35 @@
+.LanguageSelectComponent {
+    position: relative;
+    display: block;
+}
+
+.LanguageSelectComponent__globe-icon {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+}
+
+.LanguageSelectComponent__caret-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.LanguageSelectComponent__select {
+    padding: 0px 25px 0px 25px;
+    height: 32px;
+    background-color: rgba(22, 22, 22, 0.7);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    appearance: none; /* removes platform-specific styling. In this case, the select's arrow */
+}
+
+.LanguageSelectComponent__select option {
+    background-color: rgba(0, 0, 0, 0.7);
+}

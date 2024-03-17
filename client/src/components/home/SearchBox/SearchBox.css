@@ -1,0 +1,55 @@
+.SearchBox {
+    display: flex;
+    color: white;
+}
+
+.SearchBox__btn-wrapper {
+    display: flex;
+}
+
+.SearhBox__input-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.SearchBox__input {
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+    background-color: inherit;
+    padding: 0 2rem 0 1.75rem;
+    color: white;
+    height: 36px;
+    max-width: 0;
+    opacity: 0;
+    transition: opacity ease-in 250ms, width ease 250ms;
+}
+
+.SearchBox__input.visible {
+    opacity: 1;
+    max-width: 275px;
+}
+
+.SearchBox__input-icon-magnifier {
+    position: absolute;
+    padding-left: 0.5rem;
+}
+
+.SearchBox__input__btn-wrapper {
+    position: absolute;
+    right: 6px;
+}
+
+/*TODO improve css on different resolutions if necessary */
+@media (max-width:500px) {
+    
+}
+
+/* disable after this threshold */
+@media (max-width:400px) {
+    .SearchBox {
+        display: none;
+    }
+
+}

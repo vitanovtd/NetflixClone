@@ -1,0 +1,246 @@
+.MovieModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+    margin-bottom: 0.5rem;
+}
+
+.MovieModal__wrapper {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    min-height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-bottom: 2.5rem;
+}
+
+/* top part */
+
+.MovieModal__top {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: 9999;
+}
+
+.MovieModal__top:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    /* FF3.7+ */
+    background: --webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    /* W3C */
+}
+
+.MovieModal__top-img,
+.MovieModal__top-trailer {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: start;
+    z-index: 0;
+}
+
+.MovieModal__top-trailer {
+    position: relative;
+    z-index: 999999999;
+}
+
+.MovieModal__top-bottom {
+    position: absolute;
+    z-index: 9;
+    top: 30rem;
+    padding: 0 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MovieModal__top-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.MovieModal__top-bottom-left-playBtn {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0 1rem;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.MovieModal__bottom-left-release-media-type {
+    text-transform: capitalize;
+}
+
+.bi-plus,
+.bi-hand-thumbs-up {
+    background-color: #333;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.MovieModal__desc {
+    max-width: 80%;
+}
+
+.MovieModal__top-bottom-title {
+    font-size: 26px;
+}
+
+.MovieModal__top-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.MovieModal__top-bottom-sound-icons {
+    border: 1px solid #888;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi.bi-volume-mute,
+.bi.bi-volume-up {
+    color: #888;
+    font-size: 20px;
+}
+
+
+/* bottom part */
+
+.MovieModal__bottom {
+    margin-top: 1rem;
+    height: 50%;
+    width: 100%;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MovieModal__bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.MovieModal__bottom-left-release {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.MovieModal__bottom-left-release>span:first-child {
+    color: #52bd52;
+}
+
+.MovieModal__bottom-left-release>:nth-child(3) {
+    padding: 0 0.5rem;
+    border: 1px solid #777;
+}
+
+.MovieModal__bottom-left-release>span:last-child {
+    font-size: 12px;
+    padding: 0 0.5rem;
+    border: 1px solid #777;
+}
+
+.MovieModal__bottom-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.MovieModal__bottom-cast,
+.MovieModal__bottom-genres,
+.MovieModal__bottom-show {
+    display: flex;
+}
+
+.MovieModal__bottom-cast,
+.MovieModal__bottom-genres,
+.MovieModal__bottom-show {
+    display: flex;
+}
+
+.MovieModal__bottom-cast {
+    white-space: nowrap;
+}
+
+.MovieModal__bottom-cast>span {
+    color: #888;
+    font-size: 15px;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.MovieModal__bottom-genres>span>span {
+    color: #888;
+    font-size: 15px;
+    margin-right: 0.5rem;
+}
+
+.MovieModal__bottom-show>span {
+    color: #888;
+    font-size: 15px;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.bi-x-lg {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99999;
+    top: 1rem;
+    right: 1rem;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

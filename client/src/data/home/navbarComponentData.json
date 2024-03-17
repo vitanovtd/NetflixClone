@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "label": "Home",
+        "route": "/browse"
+    },
+    {
+        "id": 2,
+        "label": "TV Shows",
+        "route": "/browse/genre"
+    },
+    {
+        "id": 3,
+        "label": "Movies",
+        "route": "/browse/genre"
+    },
+    {
+        "id": 4,
+        "label": "New & Popular",
+        "route": "/latest"
+    },
+    {
+        "id": 5,
+        "label": "My List",
+        "route": "/my-list"
+    },
+    {
+        "id": 6,
+        "label": "Browse by Languages",
+        "route": "/browse/original-audio"
+    }
+
+]

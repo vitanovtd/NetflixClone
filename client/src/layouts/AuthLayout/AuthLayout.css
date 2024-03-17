@@ -1,0 +1,93 @@
+.AuthLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+.AuthLayout__header {
+  position: relative;
+}
+
+.AuthLayout__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: calc(100% - 3rem);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.AuthLayout__logo-a {
+  display: block;
+  width: 100px;
+}
+
+.AuthLayout__logo-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.AuthLayout__main {
+  flex-grow: 1;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../../assets/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Background image stretching fix*/
+  height: 800px; /* Adjust this value as needed */
+}
+
+/* Netflix M Breakpoint (tablets, 640px and up) */
+@media (min-width: 640px) {
+  .AuthLayout__logo-a {
+    width: 120px;
+  }
+
+  .AuthLayout__nav {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+/* Netflix L Breakpoint (desktop, 960px and up) */
+@media (min-width: 960px) {
+  .AuthLayout__logo-a {
+    width: 120px;
+  }
+
+  .AuthLayout__nav {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+/* Netflix XL Breakpoint (large desktop, 1280px and up) */
+@media (min-width: 1280px) {
+  .AuthLayout__logo-a {
+    width: 160px;
+  }
+
+  .AuthLayout__nav {
+    max-width: calc(84% - 6rem);
+  }
+}
+
+/* Netflix XLL Breakpoint (large desktop, 1920px and up) */
+@media (min-width: 1920px) {
+  .AuthLayout__logo-a {
+    width: 200px;
+  }
+
+  .AuthLayout__nav {
+    max-width: calc(66.6% - 6rem);
+  }
+}

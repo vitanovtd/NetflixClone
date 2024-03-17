@@ -1,0 +1,66 @@
+.MovieCarousel__row {
+  margin-bottom: 3rem;
+}
+
+.MovieCarousel__row-title {
+  width: 224px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  transition: color 0.2s ease-in-out;
+}
+
+.MovieCarousel__row-title:hover {
+  color: white;
+}
+
+.MovieCarousel__group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.MovieCarousel__chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MovieCarousel__chevron-left {
+  left: 0;
+}
+
+.MovieCarousel__chevron-right {
+  right: 0;
+}
+
+.MovieCarousel__group:hover .MovieCarousel__chevron {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.MovieCarousel__row-content {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.MovieCarousel__row-content::-webkit-scrollbar {
+  display: none;
+}
+
+.MovieCarousel__row:hover .MovieCarousel__chevron {
+  opacity: 1;
+}
