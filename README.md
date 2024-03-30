@@ -3,7 +3,7 @@ The project is a clone of Netlifx, designed to replicate the core functionalitie
 
 
 ## Features
-![Responsive Home Page](/assets/homePageIntro.png)
+![Responsive Home Page](/assets/HomePageIntro.png)
 ![Home Page](/assets/homePage.png)
 ![Set Home Page](/assets/HomePageSet.png)
 -Responsive Home Page with animations
