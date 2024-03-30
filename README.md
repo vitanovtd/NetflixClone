@@ -21,5 +21,3 @@ The project is a clone of Netlifx, designed to replicate the core functionalitie
 
 ## Screenshots
 
-Home Page
-
